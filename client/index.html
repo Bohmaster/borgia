@@ -220,11 +220,19 @@
   </div>
   <div class="w-section footer">
     <div class="w-container">
-      <div class="texto-footer" ng-click="auth()">Estudio Borgia &amp; asociados&nbsp;&nbsp;2015&nbsp;&nbsp;|&nbsp;&nbsp;Todos los derechos reservados</div>
+      <div class="texto-footer" onclick="auth()">Estudio Borgia &amp; asociados&nbsp;&nbsp;2015&nbsp;&nbsp;|&nbsp;&nbsp;Todos los derechos reservados</div>
     </div>
   </div>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/webflow.js"></script>
+  <script>
+    function auth() {
+      var pw = prompt("Ingrese la contraseña");
+      if (pw == "admin") {
+        window.location.assign('http://www.alejandrojaime.com.ar/clientes/borgia/admin.html');
+      }
+    }
+  </script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
 </body>
 </html>

@@ -99,7 +99,7 @@ myApp.controller('AdminController', function($scope, $http, $window, Novedad, Ar
   $scope.removeSelected = function() {
     angular.forEach($scope.toDelete, function(value, key) {
       console.log(key, value);
-      $http.delete('http://localhost:3000/api/Novedads/' + value)
+      $http.delete('http://179.43.123.169:3000/api/Novedads/' + value)
         .success(function(data) {
           getNovedades();
         })
